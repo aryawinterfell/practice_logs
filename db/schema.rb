@@ -17,8 +17,9 @@ ActiveRecord::Schema.define(version: 20160226194851) do
   enable_extension "plpgsql"
 
   create_table "logs", force: true do |t|
-    t.string   "date"
+    t.date     "date"
     t.string   "piece"
+    t.time     "time"
     t.text     "observations"
     t.datetime "created_at"
     t.datetime "updated_at"
